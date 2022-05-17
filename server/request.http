@@ -1,0 +1,48 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "siuciute",
+    "password": "siuciute"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "tuong_vip147",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ4Njg1MmU0NTE5NzJlMzQwZjA1OWEiLCJpYXQiOjE2NDg5MTI0NjZ9.V1DCv0qGI4Ods8a_92IeBI_9ENTHTcYoJYwUZaWxzto
+
+{
+    "title": "Javacript",
+    "description": "Javacript",
+    "url": "Javacript.com"
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ1Y2EyYTgzZDYxNzI0MTQ4MmQ4NDgiLCJpYXQiOjE2NDg5MTM0NDd9.M8Xqja_eFvcBESOkXjwIqN9g1lL7dbmOIl1-dHn01hQ
+
+###
+PUT http://localhost:5000/api/posts/624865e2faf9cf1d60e7ae70
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ1Y2EyYTgzZDYxNzI0MTQ4MmQ4NDgiLCJpYXQiOjE2NDg5MTM0NDd9.M8Xqja_eFvcBESOkXjwIqN9g1lL7dbmOIl1-dHn01hQ
+
+{
+    "title": "Vue",
+    "description": "VUEEE",
+    "url": "vue.org",
+    "status": "LEARNING"
+}
+
+###
+DELETE http://localhost:5000/api/posts/624865e2faf9cf1d60e7ae70
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjQ1Y2EyYTgzZDYxNzI0MTQ4MmQ4NDgiLCJpYXQiOjE2NDg5MTM0NDd9.M8Xqja_eFvcBESOkXjwIqN9g1lL7dbmOIl1-dHn01hQ
